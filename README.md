@@ -2,17 +2,53 @@
 Flask web UI for evaluating machine learning models
 
 # Preface
+Machine Learning classification is unnecessarily complex for basic applications or use cases. This application attempts to provide a sample a non code solution to implementing the basic ML classification models:
 
-Flask is a python web framework that can be used to layer a UI on top of python code, using HTML and JavaScript to define interface templates and routing between subdomains.
+1. Logistic Regression
+2. Naive Bayes
+3. K Nearest Neighbor
+4. Random Forest
 
-Machine learning use cases often involve the evaluation of different models to find the most accurate results. Accuracy is defined by the percentage of correct labels in a test data set on a trained model. 
+# Requirements
 
-This UI seeks to: 
-1. Take in a data set with labels;
-2. Split the data set into training and testing data;
-3. Learn data types and preprocess data for evaluation;
-4. Run training data through selected models;
-5. Evaluate accuracy of each selected model based on test data set; and,
-6. Visualize the results.
+> Basic understanding of the ML models (for input variables)
+> Cleaned, pre-processed data to train and test
+> Basic understanding of the Terminal
 
-Due to the nature of machine learning models, there are inputs that are required from the user. For example, in the Random Forest classifier one must define the number of decision trees to use. 
+# How to Host the Application
+
+Clone the repository locally. 
+
+In the Terminal, navigate to the cloned repo location and run the following commands: 
+
+If virtual env is not installed:
+
+```
+pip install virtualenv
+```
+
+Start virtual environment:
+
+```
+virtualenv virt
+```
+
+```
+source virt/bin/activate
+```
+
+Installed requirements: 
+```
+pip install -r requirements.txt
+```
+
+Launch application: 
+```
+python application.py
+```
+
+Once application has been launched, it will be hosted locally on your machine, accessible here:
+```
+http://0.0.0.0:80/
+```
+
