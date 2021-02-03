@@ -47,7 +47,7 @@ Launch application:
 python application.py
 ```
 
-Once application has been launched, it will be hosted locally on your machine, accessible here:
+Once application has been launched, it will be hosted locally on your machine, accessible here. (Performance is best in Chrome)
 ```
 http://0.0.0.0:80/
 ```
