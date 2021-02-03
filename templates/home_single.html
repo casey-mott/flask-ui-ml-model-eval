@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <link rel="shortcut icon" type="image/png" href="static/favicon.png"/>
+  <meta charset="utf-8">
+  <title color="white" style="color: rgb(249, 249, 249); -webkit-font-smoothing: antialiased; margin: 0px; padding: 0px 0px 24px;">Machine Learning Model Evaluator</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+  <div class="header">
+    <br>
+    <p>cbmott@gmail.com</p>
+  </div>
+  <style>
+  .flex_button {
+    background-color: rgb(19, 19, 19);
+    color: rgb(249,249,249);
+    font-size: 15px;
+    align-items: center;
+    line-height: 1.6;
+    max-width: max-content;
+    font-family: Avenir-Heavy, sans-serif;
+    font-style: normal;
+    letter-spacing: 1.5px;
+    border-style: solid;
+    border-color: rgb(249,249,249);
+    height: 40px;
+    border-radius: 4px;
+    padding: 0px 16px;
+    overflow: hidden;
+    cursor: pointer;
+    float:right
+  }
+  .flex_button:hover {
+    background-color: rgb(249, 249, 249);
+    color: rgb(19,19,19);
+  }
+  </style>
+  </head>
+<br><br><br><br>
+<body style="background-color: rgb(19, 19, 19); font-family: Avenir-Heavy, sans-serif; font-style: normal; letter-spacing: 1.5px; padding: 0 calc(3.5vw + 24px);">
+  <h3 style="font-style: normal; -webkit-font-smoothing: antialiased; font-size: 32px;color: rgb(249, 249, 249);">
+    Upload Your Dataset with Label
+    <a href="/" style="text-decoration:none">
+        <button class="flex_button" type="button" aria-label="" role="button" kind="primary">
+           HOME
+        </button>
+      </a>
+  </h3>
+
+  <form method="POST" enctype=multipart/form-data>
+    <input type="button" class="buttonstyle" value="SELECT CSV" onclick="document.getElementById('file').click();" />
+    <input type="file" style="display:none;" id="file" name="file"/>
+    <button type="submit" id='btnFetch2' class="buttonstyle">UPLOAD</button>
+  </form>
+
+  <br>
+  <h3 style="font-style: normal; -webkit-font-smoothing: antialiased; font-size: 32px;color: rgb(249, 249, 249);">
+    Or Use Dummy Data
+  </h3>
+
+  <p style="color: rgb(202, 202, 202);">
+    Data is sourced from <a href="https://www.kaggle.com/jacksonchou/hr-data-for-analytics">Kaggle</a>. It is a collection of HR analytics<br>
+    used to try to classify employees most likely to leave the company.
+  </p>
+
+  <a href="/dummy_single">
+    <button type="submit" id='btnFetch' class="buttonstyle">USE DUMMY DATA</button>
+  </a>
+
+</body>
+</html>
