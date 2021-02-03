@@ -11,9 +11,9 @@ Machine Learning classification is unnecessarily complex for basic applications 
 
 # Requirements
 
-> Basic understanding of the ML models (for input variables)
-> Cleaned, pre-processed data to train and test
-> Basic understanding of the Terminal
+- Basic understanding of the ML models (for input variables)
+- Cleaned, pre-processed data to train and test
+- Basic understanding of the Terminal
 
 # How to Host the Application
 
@@ -37,7 +37,7 @@ virtualenv virt
 source virt/bin/activate
 ```
 
-Installed requirements: 
+Install requirements: 
 ```
 pip install -r requirements.txt
 ```
