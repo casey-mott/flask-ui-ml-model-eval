@@ -52,3 +52,10 @@ Once application has been launched, it will be hosted locally on your machine, a
 http://0.0.0.0:80/
 ```
 
+# Using the Application
+
+The applications accepts cleaned CSV uploads of any data sets for training and testing. The data that is uploaded must first be pre-processed. 
+
+Alternatively, there is dummy data stored in the application's memory, which is sourced from Kaggle. It is a dataset using HR analytics to classify employees likely to leave a company. 
+
+The user has the choice to select a single model to see overall performance or can compare all of the models to find the best performing classifier. 
