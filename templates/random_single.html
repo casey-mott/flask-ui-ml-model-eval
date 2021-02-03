@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <link rel="shortcut icon" type="image/png" href="static/favicon.png"/>
+  <meta charset="utf-8">
+  <title color="white" style="color: rgb(249, 249, 249); -webkit-font-smoothing: antialiased; margin: 0px; padding: 0px 0px 24px;">Machine Learning Model Evaluator</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+  <div class="header">
+    <br>
+    <p>cbmott@gmail.com</p>
+  </div>
+  <style>
+  .dropdownstyle {
+    background-color: rgb(19, 19, 19);
+    color: rgb(249,249,249);
+    font-size: 15px;
+    align-items: center;
+    line-height: 1.6;
+    width: 300px;
+    font-family: Avenir-Heavy, sans-serif;
+    font-style: normal;
+    letter-spacing: 1.5px;
+    border-radius: 4px;
+    height: 36px;
+    cursor: pointer;
+    -webkit-font-smoothing: antialiased;
+  }
+  .flex_button {
+    background-color: rgb(19, 19, 19);
+    color: rgb(249,249,249);
+    font-size: 15px;
+    align-items: center;
+    line-height: 1.6;
+    max-width: max-content;
+    font-family: Avenir-Heavy, sans-serif;
+    font-style: normal;
+    letter-spacing: 1.5px;
+    border-style: solid;
+    border-color: rgb(249,249,249);
+    height: 40px;
+    border-radius: 4px;
+    padding: 0px 16px;
+    overflow: hidden;
+    cursor: pointer;
+    float:right
+  }
+  .flex_button:hover {
+    background-color: rgb(249, 249, 249);
+    color: rgb(19,19,19);
+  }
+  </style>
+  </head>
+<br><br><br><br>
+<body style="background-color: rgb(19, 19, 19); font-family: Avenir-Heavy, sans-serif; font-style: normal; letter-spacing: 1.5px; padding: 0 calc(3.5vw + 24px);">
+
+  <h3 style="font-style: normal; -webkit-font-smoothing: antialiased; font-size: 32px;color: rgb(249, 249, 249);">
+    Specifications
+    <a href="/" style="text-decoration:none">
+        <button class="flex_button" type="button" aria-label="" role="button" kind="primary">
+           HOME
+        </button>
+      </a>
+  </h3>
+  <p style="color: rgb(255,0,0)">
+    {{ error }}
+  </p>
+
+  <form id="form1" action="/random" method="POST" enctype="multipart/form-data">
+
+    <label style="color: rgb(202, 202, 202);">Enter Number of Forest Trees</label><br>
+      <input value=100 class="freeform" type="number" id="trees" name="trees" autocomplete="off" method="GET" action="/"><br><br>
+    <br><br>
+    <button class="buttonstyle" type="submit" aria-label="" role="button" id="btnFetch" kind="primary">
+      RUN MODELS
+    </button>
+  </form>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script>
+
+  $(document).ready(function() {
+      $("#btnFetch").click(function() {
+        $(this).prop("disabled", true);
+        $(this).html(
+          `<i class="fa fa-spinner fa-spin"></i> LOADING...`
+        );
+        $("#form1").submit();
+      });
+  });
+
+  </script>
+
+  <br><br><br><br><br><br>
+
+  <br><br>
+</body>
+</html>
