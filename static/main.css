@@ -1,0 +1,97 @@
+.buttonstyle {
+  background-color: rgb(0, 114, 210);
+  color: rgb(249,249,249);
+  font-size: 15px;
+  align-items: center;
+  line-height: 1.6;
+  max-width: max-content;
+  font-family: Avenir-Heavy, sans-serif;
+  font-style: normal;
+  letter-spacing: 1.5px;
+  border-style: none;
+  height: 40px;
+  border-radius: 4px;
+  padding: 0px 16px;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+}
+.buttonstyle:hover {
+  background-color: rgb(0, 114, 255);
+}
+.img-container {
+  text-align: center;
+}
+.header {
+   position: fixed;
+   left: 0;
+   top: 0;
+   width: 100%;
+   background-color: rgb(19, 19, 19);
+   color: rgb(202, 202, 202);
+   text-align: center;
+   font-family: Avenir, sans-serif;
+   font-style: normal;
+   letter-spacing: 1.5px;
+   font-size: 18px;
+   -webkit-font-smoothing: antialiased;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: rgb(19, 19, 19);
+   color: rgb(202, 202, 202);
+   text-align: center;
+   font-family: Avenir, sans-serif;
+   font-style: normal;
+   letter-spacing: 1.5px;
+   font-size: 14px;
+   -webkit-font-smoothing: antialiased;
+}
+.freeform {
+  background-color: rgb(19, 19, 19);
+  color: rgb(249,249,249);
+  border-style: solid;
+  border-color: rgb(249,249,249);
+  font-size: 15px;
+  align-items: center;
+  line-height: 1.6;
+  width: 300px;
+  border-radius: 4px;
+  font-family: Avenir-Heavy, sans-serif;
+  font-style: normal;
+  letter-spacing: 1.17px;
+  height: 36px;
+  -webkit-font-smoothing: antialiased;
+}
+.freeform:focus {
+  background-color: rgb(75, 78, 90);
+}
+.flex_button {
+  background-color: rgb(19, 19, 19);
+  color: rgb(249,249,249);
+  font-size: 15px;
+  align-items: center;
+  line-height: 1.6;
+  max-width: max-content;
+  font-family: Avenir-Heavy, sans-serif;
+  font-style: normal;
+  letter-spacing: 1.5px;
+  border-style: solid;
+  border-color: rgb(249,249,249);
+  height: 40px;
+  border-radius: 4px;
+  padding: 0px 16px;
+  overflow: hidden;
+  cursor: pointer;
+  float:right
+}
+.flex_button:hover {
+  background-color: rgb(249, 249, 249);
+  color: rgb(19,19,19);
+}
+body {
+  text-align: center
+}
